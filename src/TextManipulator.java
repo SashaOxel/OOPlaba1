@@ -1,7 +1,18 @@
 public class TextManipulator {
     String text;
+
+    // Конструктор без параметров: текст - пустая строка.
+    public TextManipulator () {
+        this.text = "";
+    }
+
     public TextManipulator (String text) {
         this.text=text;
+    }
+
+    // Конструктор копирования: копирует текст из другого объекта.
+    public TextManipulator (TextManipulator other) {
+        this.text = other.text;
     }
 
     public String sortByLength () {
